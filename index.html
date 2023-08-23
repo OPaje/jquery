@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/lib/jquery-3.7.0.min.js"></script>
+    <script src="./scripts/global.js"></script>
+    <title>Ex Jquery</title>
+</head>
+<body>
+    <h1>Execícios de JQuery</h1>
+    <section id="exercicio1">
+        <h2>Exercício 1</h2>
+        <header>
+            <p>Crie um elemento do tipo parágrafo e um botão. Quando tal botão for clicado, o texto do parágrafo deve
+                ser modificado para "Estou estudando JQuery!"
+            </p>
+        </header>
+        <p id="ex1-text">Esse texto vai mudar</p>
+        <button id="btn-mudaTexto">Mudar texto</button>
+    </section>
+    <section id="exercicio2">
+        <h2>Exercício 2</h2>
+        <header>
+            <p>Crie um elemento de parágrafo que contenha seu nome completo. Adicione um estilo de cor de fonte e
+                plano de fundo a ele. Além disso, adicione um botão. Quando o botão é clicado deve haver a alternância
+                da visibilidade deste parágrafo, isto é, se estava visível fica invisível e vice-versa.
+            </p>
+        </header>
+        <p id="nome">Jean Carlos de Souza Silva</p>
+        <button id="btn-mudaVisibilidade">Mudar Visibilidade</button>
+    </section>
+    <section>
+        <h2>Exercício 2</h2>
+        <header>
+            <p>
+                Crie um menu com efeito de acordeon. Para isso, você irá usar a ideia de lista e sub lista. A lista principal
+                apresentará os principais itens do menu. Um item da lista pode ter uma sub lista que irá conter as opções
+                mais específicas. Você deverá programar para que quando o item da lista principal for clicado, os itens da
+                respectiva sub lista aparecem com o efeito de deslizar (slide)
+            </p>
+        </header>
+        <ul id="principal-list">
+            <li>
+                Item 1
+                <ul class="sub-list">
+                    <li>Sub Item 1</li>
+                    <li>Sub Item 2</li>
+                    <li>Sub Item 3</li>
+                </ul>
+            </li>
+            <li>
+                Item 2
+                <ul class="sub-list">
+                    <li>Sub item 4</li>
+                    <li>Sub item 5</li>
+                    <li>Sub item 6</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Exercício 4</h2>
+        <header>
+            <p>
+                Crie um formulário com três campos de texto, são eles: 1) nome (não pode conter espaços em branco,
+                deve ter no mínimo 5 caracteres e no máximo 40); 2) endereço (não pode ser em branco, deve ter no
+                mínimo duas palavras). Além disso, crie um botão "Enviar". Quando este botão for clicado, o formulário
+                deverá ser validado utilizando JQuery (não utilize recursos do HTML5 neste exercício). As mensagens de 
+                erro devem aparecer em um elemento do tipo parágrafo logo acima do formulário. Se preferir, você pode
+                personalizar ainda mais e colocar as mensagens logo abaixo dos respectivos campos que as originaram.
+            </p>
+        </header>
+        <p id="erros">
+            
+        </p>
+        <form>
+            <label for="nome-form">Nome:</label>
+            <input type="text" name="nome" id="nome-form">
+
+            <label for="endereco-form">Endereço</label>
+            <input type="text" name="endereco" id="endereco-form">
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2>Exercício 4</h2>
+        <header>
+            <p>
+                Crie uma galeria de imagens com botões de próximo e anterior. Para isso, você deverá baixar 5 imagens
+                da internet de sua preferência e colocá-las em uma pasta dentro de seu projeto. Quando o botão anterior
+                for clicado, apresente a imagem anterior e, de forma semelhante, quando o botão próximo for clicado,
+                apresente a imagem posterior a atual. Utilize o efeito de fade em sua galeria.
+            </p>
+        </header>
+
+        <div id="carrossel">
+            <img src="./assets/img/gato1.jpg" alt="Gato 1">
+            <img src="./assets/img/gato2.jpg" alt="Gato 2">
+            <img src="./assets/img/gato3.jpg" alt="Gato 3">
+            <img src="./assets/img/gato4.jpg" alt="Gato 4">
+            <img src="./assets/img/gato5.jpeg" alt="Gato 5">
+        </div>
+        <button id="btn-anterior">anterior</button>
+        <button id="btn-posterior">posterior</button>
+    </section>
+</body>
+</html>
