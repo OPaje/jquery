@@ -7,6 +7,12 @@ $(function(){
 
     //Ex2
     $("#btn-mudaVisibilidade").on("click", function(){
+        const estilos ={
+            "color" : "white",
+            "background-color": "green"
+        }
+
+        $("#nome").css(estilos)
         $("#nome").fadeToggle(500)
     })
 
